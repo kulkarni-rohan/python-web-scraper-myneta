@@ -173,7 +173,7 @@ def get_candidate_list_from_state_with_year(url):
 	# Change the file name when changing the url
 	# This logic below would match the row read from the url (example: https://myneta.info/karnatka2008/candidate.php?candidate_id=9)
 	# and using the dictionary to get the exact column matching to update the csv file with the appropriate value.
-    with open("rohan_sun_may.csv", mode="w", newline="") as csv_file:
+    with open("result.csv", mode="w", newline="") as csv_file:
         writer = csv.writer(csv_file)
         for row in rows:
             # Find all the table cells within the row
